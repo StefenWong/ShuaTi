@@ -1,3 +1,7 @@
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 作者： wanglei
  * 创建时间： 2020/8/18 15:02
@@ -17,13 +21,24 @@ public class Duplicate2 {
     // Return value:       true if the input is valid, and there are some duplications in the array number
     //                     otherwise false
     public boolean duplicate(int numbers[],int length,int [] duplication) {
-
-
-        return  true;
+        //解法2：自解算法 偷懒用Array署组的排序算法，遍历后如果相邻的有一样的数字，给duplication数组赋值
+        if (numbers == null ) {
+            return false;
+        }
+        Arrays.sort(numbers);
+        for (int i = 0; i < length-1; i++) {
+            if (numbers[i] == numbers[i+1]){
+                duplication[0] = numbers[i];
+                return true;
+            }
+        }
+        return  false;
     }
 
     public static void main(String[] args) {
-
+        int[] a = {6,4,1,0,2,5,3};
+        //int [] c ;
+        System.out.println(new Duplicate2().duplicate(a,a.length, a) );
     }
 
 }

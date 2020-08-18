@@ -1,6 +1,3 @@
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * 作者： wanglei
  * 创建时间： 2020/8/18 15:02
@@ -10,7 +7,7 @@ import java.util.Map;
  * 数字重复几次。请找出数组中任意一个重复的数字。 例如，如果输入长度为7的数组{2,3,1,0,2,5,3}，那么对应的输出是
  * 第一个重复的数字2。
  */
-public class Duplicate {
+public class Duplicate2 {
     // Parameters:
     //    numbers:     an array of integers
     //    length:      the length of array numbers
@@ -20,27 +17,13 @@ public class Duplicate {
     // Return value:       true if the input is valid, and there are some duplications in the array number
     //                     otherwise false
     public boolean duplicate(int numbers[],int length,int [] duplication) {
-        //解法1：自解算法 用一个map集合来表示，key为数组的元素，value为boolean值，默认是false\
-        boolean res = false;
-        Map map = new HashMap<>();
-        for (int i = 0; i < length; i++) {
-            if(!map.containsKey(numbers[i])){
-                map.put(numbers[i],false);
-            } else {
-                map.put(numbers[i],true);
-            }
-        }
 
-           if (map.containsValue(true)){
-            res = true;
-           }
-        return  res;
+
+        return  true;
     }
 
     public static void main(String[] args) {
-        int[] a = {6,4,1,0,2,5,3};
-        int [] c = null ;
-        System.out.println(new Duplicate().duplicate(a,a.length, c) );
+
     }
 
 }

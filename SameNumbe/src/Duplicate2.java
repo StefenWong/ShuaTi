@@ -41,4 +41,7 @@ public class Duplicate2 {
         System.out.println(new Duplicate2().duplicate(a,a.length, a) );
     }
 
+
+    //运行时间: 12ms 占用内存: 9716KB
+
 }

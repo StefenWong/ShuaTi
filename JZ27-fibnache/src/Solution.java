@@ -14,7 +14,7 @@
  * 这个数列从第3项开始，每一项都等于前两项之和。
  */
 public class Solution {
-    //解法1：注意有第0项这个概念
+    //解法1：注意有第0项这个概念  暴力破解法
     public int Fibonacci(int n) {
         if (n <=0) {
             return 0;

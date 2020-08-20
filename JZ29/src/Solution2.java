@@ -11,7 +11,7 @@ import java.util.Arrays;
 public class Solution2 {
     //解法1：大顶堆排序 todo
     public ArrayList<Integer> GetLeastNumbers_Solution(int [] input, int k) {
-
+        return null;
     }
 
     public static void main(String[] args) {

@@ -1,6 +1,4 @@
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * 作者： wanglei
@@ -27,5 +25,9 @@ public class Solution2 {
        //int[] a = {1,2,3,2,2,2,5,4,2};
         System.out.println(new Solution2().MoreThanHalfNum_Solution(a));
     }
+
+    double d=0x12345678;
+
 }
 
+//运行时间: 10ms 占用内存: 9316KB

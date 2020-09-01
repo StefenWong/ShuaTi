@@ -12,8 +12,30 @@ public class Solution {
     //方法1：可以使用一种超简单且易理解的方法（包注释不超过20行）：1.吸收第一行，并将第一行从矩阵中去掉，
     // 2.将矩阵“变相转置”（这里的转置可以理解为将矩阵从地上立起来，比如矩阵是【【1,2,3】， 【4,5,6】】 将它“变相转置”
     // （立起来）为 【【3,6】，【2,5】，【1,4】】 ）3.重复以上两步，直到将第一行去掉之后矩阵为空。
+
+    //现在尝试第一种和第二种结合的方法
     public ArrayList<Integer> printMatrix(int [][] matrix) {
         ArrayList<Integer> arrayList = new ArrayList<>();
+
+        //先打印第一行，然后翻转剩下的矩阵,下面方法只翻滚，返回一个新的矩阵
+        //问题是，翻滚矩阵传递进去的参数是原来的矩阵？？？？——解答：其实不是的了，每次翻滚都返回一个新的矩阵，传递的是新的
+        //1,特殊情况：行书或者列数为0
+        if(matrix.length == 0 || matrix[0].length ==0){
+            return null;
+        }
+        //2，打印首行
+
+
+        return arrayList;
+    }
+
+    public ArrayList<Integer>  turnMatrix(int[][] matrix){
+        //传进来矩阵的行数
+        int m = matrix.length;
+        //列数
+        int n = matrix[0].length;
+        int[][]  newMatrc = new int[n][m-1];
+
 
         return null;
     }
